@@ -35,7 +35,56 @@
    }
    .title h1, .title h2, .title h3 {
       display: inline-block;
-   }</style>
+   }
+         body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: 'Arvo', sans-serif;
+         }
+
+         .title {
+            text-align: center;
+         }
+
+         .title h1, .title h2, .title h3 {
+            display: inline-block;
+         }
+
+         @media only screen and (max-width: 767px) {
+            body {
+               background-size: contain; /* or any other suitable value */
+            }
+
+            .title {
+               font-size: 1.5em; /* Adjust font size for better readability on smaller screens */
+            }
+
+            .top-right-decoration,
+            .top-left-decoration {
+               display: none; /* Hide top-right and top-left decorations on smaller screens */
+            }
+         }
+
+         @media only screen and (min-width: 768px) and (max-width: 991px) {
+            body {
+               /* Add tablet-specific styles if needed */
+            }
+         }
+
+         @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            body {
+               /* Add laptop-specific styles if needed */
+            }
+         }
+
+         @media only screen and (min-width: 1200px) {
+            body {
+               /* Add desktop-specific styles if needed */
+            }
+         }
+      </style>
       <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
       <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
       <link rel="stylesheet" href="style.css">
