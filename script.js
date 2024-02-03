@@ -1,11 +1,11 @@
-
 (function ($) {
     "use strict";
-      $('.sakura-falling').sakura();
+    $('.sakura-falling').sakura();
 })(jQuery);
 
 $(document).on('click', function(){
-    document.getElementById("Srirasthu Subhamastu.mp3").play();
+    var audio = new Audio("Srirasthu Subhamastu.mp3");
+    audio.play();
     console.log('Pelli Ki Thappakunda Randi');
 });
 
@@ -33,11 +33,11 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("time").innerHTML = "Bless the married couple for happy life!";
+        document.getElementById("time").innerHTML = "Bless the married couple for a happy life!";
     }
 }, 1000);
 
-// being a bit cool :p  
+// Being a bit cool :p  
 var styles = [
     'background: linear-gradient(#D33106, #571402)'
     , 'border: 4px solid #3E0E02'
@@ -76,4 +76,4 @@ console.log('%cYour presence is requested!%c\n\nRegards: Both Families', styles1
 console.log(
     `%cPelli Ki Thappakunda Randi!\n\n`,
     'color: yellow; background:tomato; font-size: 24pt; font-weight: bold',
-)
+);
